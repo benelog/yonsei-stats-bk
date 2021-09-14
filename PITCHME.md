@@ -50,7 +50,7 @@ title:  네이버 개발자 업무와 기술 플랫폼
 - 데이터 저장소
    - 관계형 DB : MySQL
    - Key,value 저장소 : Redis, Memcached라는 오픈소스를 바탕으로 한 제품들이 많이 쓰임.
-   - 그외 검색/데이터분석을 위한 저장소 등도 따로 있음.
+   - 그외 검색/데이터 분석 등을 위한 저장소도 있음.
 
 ---
 
@@ -66,7 +66,8 @@ title:  네이버 개발자 업무와 기술 플랫폼
 ## 첨고 자료
 
 - [백엔드 개발자를 꿈꾸는 학생개발자에게](https://d2.naver.com/news/3435170)
-- [Next 페이 프로젝트 서버 개발](https://naver-career.gitbook.io/kr/service/platform-labs/next-npay)
+- https://naver-career.gitbook.io/kr/service/platform-labs/next-npay : 실무에서 어떤 기술을 쓰는지 참고할만함
+- https://www.naver-recruit.com/ : 신입공채 안내 페이지
 
 ---
 
@@ -154,5 +155,5 @@ title:  네이버 개발자 업무와 기술 플랫폼
 
 ---
 
-- 네이버 백엔드 개발/공통 플랫폼 개발은 네이버 서비스의 눈에 보이지 않는 영역을 뒷받침하는 업무를 함.
+- 네이버 백엔드 개발/공통 플랫폼 개발은 네이버 서비스를 지탱하는 기술을 담당함.
 - 프로그래밍이 스스로도 재미있고, 적성에 맞다는 증거도 있다면 개발자는 할만한 진로
