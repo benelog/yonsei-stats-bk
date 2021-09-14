@@ -9,8 +9,10 @@
 
 ## 사용한 도구
 
-프리젠테이션 도구인 [Marp](https://marp.app) 생태계의 기술로 발표자료를 작성
-
-- [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) : PC에서 미리 보기
-- https://github.com/yhatt/marp-cli-example 의 템플릿
-  - [GitHub Pages](https://pages.github.com/)로 배포해주는 [GitHub Actions](https://github.com/features/actions) 설정까지 포함되어 있음.
+- 프리젠테이션 도구인 [Marp](https://marp.app) 로 HTML 슬라이드를 빌드
+    - [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) PC에서 작성하고 미리 보기함
+    - https://github.com/yhatt/marp-cli-example 의 템플릿으로 HTML 퍼블리슁
+       - [GitHub Pages](https://pages.github.com/)로 배포해주는 [GitHub Actions](https://github.com/features/actions) 설정까지 포함되어 있음.
+- 다이어그램은 [Draw.io Desktop](https://github.com/jgraph/drawio-desktop/releases)으로 작성
+    - 'png' 파일로 저장하면 재편집 가능한 데이터까지 포함할 수 있음
+    - ['인터넷 서비스 구성의 예' 다이어그램](assets/service-servers.jpg)
