@@ -1,75 +1,158 @@
 ---
 marp: true
-title: Marp CLI example
-description: Hosting Marp slide deck on the web
-theme: uncover
-paginate: true
-_paginate: false
+title:  네이버 개발자 업무와 기술 플랫폼
 ---
 
-![bg](./assets/gradient.jpg)
+![bg](./assets/cover.jpg)
 
-# <!--fit--> Marp CLI example
-
-Hosting Marp slide deck on the web
-
-https://github.com/yhatt/marp-cli-example
-
-<style scoped>a { color: #eee; }</style>
-
-<!-- This is presenter note. You can write down notes through HTML comment. -->
 
 ---
 
-![Marp bg 60%](https://raw.githubusercontent.com/marp-team/marp/master/marp.png)
+
+## 발표자 경력
+
+- 2008 - 현재 : 네이버
+   - 주로 백엔드 서버 개발 담당
+   - 여러 네이버 서비스(주소록, 미투데이, 네이버TV 등)의 프로젝트 참여
+   - 현재 네이버페이 기술 구조 개선 프로젝트 진행 중. 개발조직 조직장
+- 2004 - 2008 : 삼성SDS
+   - 공공사업 S/W 엔지니어
+   - 교육부, 행자부, 감사원 프로젝트 참여
+- 1997 - 2004 : 연세대학교 상경계열 재학
+   - 겅영학, 응용통계학 이중 전공
 
 ---
 
-![bg](#123)
-![](#fff)
-
-##### <!--fit--> [Marp CLI](https://github.com/marp-team/marp-cli) + [GitHub Pages](https://github.com/pages) | [Netlify](https://www.netlify.com/) | [Vercel](https://vercel.com/)
-
-##### <!--fit--> 👉 The easiest way to host<br />your Marp deck on the web
+## 발표에서 다룰 주제
+- 네이버의 백엔드 서버 개발자 직무 소개
+- 네이버 공통 플랫폼 개발 업무 (Platform Labs) 소개
+- 개발자 진로 선택 경험
 
 ---
 
-![bg right 60%](https://icongr.am/octicons/mark-github.svg)
-
-## **[GitHub Pages](https://github.com/pages)**
-
-#### Ready to write & host your deck!
-
-[![Use this as template h:1.5em](https://img.shields.io/badge/-Use%20this%20as%20template-brightgreen?style=for-the-badge&logo=github)](https://github.com/yhatt/marp-cli-example/generate)
+# 백엔드 서버 개발
 
 ---
 
-![bg right 60%](https://icongr.am/simple/netlify.svg?colored)
+## '백엔드'란 어디까지인가?
+- 모호하고 넓은 범위.
+   - 애매하면 백엔드 개발자라고 부르기도..
+- 어플리케이션(응용)소프트웨어 개발과 기반 플랫폼 개발로도 나눠서 생각할수도 있지만, 경계에 걸친 일도 있음.
 
-## **[Netlify](https://www.netlify.com/)**
-
-#### Ready to write & host your deck!
-
-[![Deploy to Netlify h:1.5em](./assets/netlify-deploy-button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yhatt/marp-cli-example)
 
 ---
 
-![bg right 60%](https://icongr.am/simple/zeit.svg)
-
-## **[Vercel](https://vercel.com/)**
-
-#### Ready to write & host your deck!
-
-[![Deploy to Vercel h:1.5em](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/yhatt/marp-cli-example)
-
----
-
-### <!--fit--> :ok_hand:
+## 주로 쓰는 기술
+- 언어 : Java/JavaScript/Kotlin/Go/C++/SQL
+- 미들웨어 / 프레임워크
+   - 부품이 되는 기술
+   - NGINX, Tomcat, Spring framework 등
+- 데이터 저장소
+   - 관계형 DB : MySQL
+   - Key,value 저장소 : Redis, Memcached라는 오픈소스를 바탕으로 한 제품들이 많이 쓰임.
+   - 그외 검색/데이터분석을 위한 저장소 등도 따로 있음.
 
 ---
 
-![bg 40% opacity blur](https://avatars1.githubusercontent.com/u/3993388?v=4)
+## 통계가 도움이 되는 업무는?
+- 데이터 분석 직무에 비하면 통계 전공을 직접적으로 살릴 수 있는 직무는 아님
+    - 그래도 통계를 알면 도움이 되는 업무가 있긴 함
+- A/B testing 플랫폼의 분석 모델
+- AIOps : DevOps(개발+운영)의 AI 접목
+    - 예: 현재 시스템의 상태가 장애인지 아닌지를 판달하는 모델 만들기
 
-### Created by Yuki Hattori ([@yhatt](https://github.com/yhatt))
+---
 
-https://github.com/yhatt/marp-cli-example
+## 첨고 자료
+
+- [백엔드 개발자를 꿈꾸는 학생개발자에게](https://d2.naver.com/news/3435170)
+- [Next 페이 프로젝트 서버 개발](https://naver-career.gitbook.io/kr/service/platform-labs/next-npay)
+
+---
+
+# 공통 기술 플랫폼
+
+---
+
+### 공통 기술 플래폼의 역할은?
+
+- 아래 서비스의 데이터는 어디에 저장될까?
+   - 네이버 마이박스(구 N드라이브)에 올라간 파일
+   - 네이버 메일
+   - 네이버 블로그
+- 수 많은 서버들을 어떻게 모니터링할까?
+- 뉴스 속보로 갑자기 사용자가 몰리면 어떻게 대처할까?
+
+---
+
+- 네이버는 자체 공통 기술 플랫폼을 만들고 있음.
+    - 분산 파일 시스템
+    - 분산 관계형 데이터베이스
+    - 모니터링 도구
+    - 로그 수집 도구
+    - 클라우드 컴퓨팅 플랫폼
+- 오픈소스 S/W를 기반으로하는 경우가 많음.
+
+---
+
+## 참고자료
+
+- https://naver-career.gitbook.io/kr/service/platform-labs
+
+---
+
+# 개발 진로 선택
+
+발표자의 개인적인 경험을 바탕으로..
+
+
+---
+
+## 이직
+
+- SI업체(외주)에서 의미있는 사회경험을 했다고 느낌
+- 네이버로 이직한 이유
+   - 내가 쓰는 서비스를 내가 만들어보고 싶다는 생각
+   - 개발자로 더 성장하고 기술역량이 더 인정 받을 수 있는 회사로 기대함
+
+---
+
+## 대학 시절 진로 고민
+- 컴퓨터 관련 과목이 많은것이 좋아보여서 응용통계학 이중 전공 션택
+- 4학년때 군대 다녀옴
+   - 남다르게 할줄 아는게 프로그래밍 밖에 없어서 개발자 진로를 택함
+   - 당시 비컴공전공자도 많이 뽑는 삼성SDS로 지원
+
+---
+
+### 재미있게 들은 과목
+전체 학점은 낮은데(3.04) 컴퓨터 관련 과목은 성적이 좋았음.
+
+- 공대 개설 교양 과정인 C/C++/Java
+- 데이터베이스 (서길수 교수님)
+- 시스템 설계와 분석 (김진우 교수님)
+- 회귀분석 (이학배 교수님)
+- 정보시스템 현장실습 : 홈페이지 만드는 웹에이젼시에서 인턴 체험
+- 컴퓨터 자료 처리 등 박상언 교수님 과목
+    - S-Plus를 배웠는데 알고보니 R과 친척
+
+---
+
+## 국민학교 - 고등학교 때
+
+- 프로그래밍이 꾸준한 취미
+    - 국민학교 때 GW-BASIC으로 입문. 고 1때 C언어 독학
+- 어쩌다보니 문과 선택
+    - 부모님의 권유 + 문과가 공부할 양이 적다는 감언이설에 넘어감.
+- 문과로와서보니 경영학과가 그나마 맞아보임.
+    - 다양한 세부 분야, 세부적인 진로 선택을 마음 편하게 유보할수 있다는 느낌.
+    - 이과에 가까운 과목도 많음.
+
+---
+
+# 정리
+
+---
+
+- 네이버 백엔드 개발/공통 플랫폼 개발은 네이버 서비스의 눈에 보이지 않는 영역을 뒷받침하는 업무를 함.
+- 프로그래밍이 스스로도 재미있고, 적성에 맞다는 증거도 있다면 개발자는 할만한 진로
