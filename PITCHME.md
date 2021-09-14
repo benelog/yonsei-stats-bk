@@ -19,7 +19,7 @@ title:  네이버 개발자 업무와 기술 플랫폼
    - 공공사업 S/W 엔지니어
    - 교육부, 행자부, 감사원 프로젝트 참여
 - 1997 - 2004 : 연세대학교 상경계열 재학
-   - 겅영학, 응용통계학 이중 전공
+   - 경영학, 응용통계학 이중 전공
 
 ---
 
@@ -34,11 +34,22 @@ title:  네이버 개발자 업무와 기술 플랫폼
 
 ---
 
-## '백엔드'란 어디까지인가?
-- 모호하고 넓은 범위.
-   - 애매하면 백엔드 개발자라고 부르기도..
-- 어플리케이션(응용)소프트웨어 개발과 기반 플랫폼 개발로도 나눠서 생각할수도 있지만, 경계에 걸친 일도 있음.
 
+## 인터넷 서비스 구성의 예
+
+![backend](assets/service-servers.png)
+
+----
+
+## '백엔드 개발'란 어디까지인가?
+
+- 모호하고 넓은 범위
+- 어플리케이션(응용)소프트웨어 개발과 기반 플랫폼 개발
+   - 경계에 걸친 일도 있음
+- 데이터 엔지니어도 '백엔드 개발자' 로 넓게 분류하기도
+   - 참고 : 이것도 백엔드? - [손쉽게 ML 라이프사이클을 다룰 수 있는 MLOps](https://deview.kr/2020/sessions/393)
+- 사이언스보다는 엔지니어링에 가까운 일
+   - 참고 : 백엔드 개발자와 협업하는 [데이터 사이언티스트 인터뷰](https://naverfincorp-career.com/nfin/interview?id=1)
 
 ---
 
@@ -46,11 +57,11 @@ title:  네이버 개발자 업무와 기술 플랫폼
 - 언어 : Java/JavaScript/Kotlin/Go/C++/SQL
 - 기반/부품이 되는 기술: 인프라스럭 기술/미들웨어 /프레임워크
    - Linux, Docker, k8s
-   - NGINX, Tomcat, Docker, k8s, Spring framework 등
+   - NGINX, Tomcat, Spring framework 등
 - 데이터 저장소
    - 관계형 DB : MySQL이 가장 많이 쓰임
    - Key,value 저장소 : Redis, Memcached라는 오픈소스를 바탕으로 한 제품들이 많이 쓰임
-   - 그외 검색/데이터 분석 등을 위한 저장소도 있음
+   - 검색/데이터 분석 등을 위한 저장소 : 대표적으로 Hadoop 생태계 기술
 
 ---
 
@@ -63,6 +74,15 @@ title:  네이버 개발자 업무와 기술 플랫폼
 ---
 
 # 공통 기술 플랫폼
+
+![bg](assets/platform-labs.png)
+
+---
+
+### Platform Labs
+
+- 네이버의 서비스에 쓰이는 공통 플랫폼을 개발하는 조직
+- 미션 : 네이버 서비스의 기초 체력을 튼튼하게 만들어주는 기술 개발
 
 ---
 
@@ -77,16 +97,35 @@ title:  네이버 개발자 업무와 기술 플랫폼
 
 ---
 
-- 네이버는 자체 공통 기술 플랫폼을 만들고 있음.
+- 네이버의 자체 공통 기술 플랫폼의 예
     - 분산 파일 시스템
     - 분산 관계형 데이터베이스
     - 모니터링 도구
     - 로그 수집 도구
-    - 클라우드 컴퓨팅 플랫폼
+    - 클라우드 컴퓨팅 플랫폼 (Docker container)
 - 오픈소스 S/W를 기반으로하는 경우가 많음.
+- 풀타임으로 오픈소스 개발을 하시는 분이 8명
 
 ---
 
+## 오픈소스 기여
+
+Platform Labs에서는 유명 오픈소스 S/W을 깊이 파악하고 기여하는 역량을 중요시하고 있음.
+
+- 오픈소스 재단인 Apache Foundation의  committer가  6명
+- 유명 오픈소스에 중요한 기여를 하기도함
+   - 예) Linux 커널, Spring data
+- 풀타임 오픈소스 개발자 8명
+
+---
+
+- Platform Labs에서 개발해서 오픈소스로 공개된 소프트웨어
+   - [Pinpoint](https://github.com/pinpoint-apm/pinpoint) : 성능 모니터링 도구
+   - [nGrinder](https://github.com/naver/ngrinder) : 성능 측정 도구
+   - [nBase-ARC](https://github.com/naver/nbase-arc) : 분산 메모리 저장소
+   - [Billboard.js](https://github.com/naver/billboard.js) : 차트 라이브러리
+
+---
 
 ## 통계와 연관이 있는 업무
 
@@ -94,15 +133,10 @@ title:  네이버 개발자 업무와 기술 플랫폼
 - AIOps : DevOps(개발+운영)의 AI 접목
     - 예: 현재 시스템의 상태가 장애인지 아닌지를 판단하는 모델 만들기
 
----
-
-## 참고자료
-
-- https://naver-career.gitbook.io/kr/service/platform-labs
 
 ---
 
-# 개발 진로 선택
+# 개발자 진로 선택
 
 발표자의 개인적인 경험을 바탕으로..
 
@@ -162,13 +196,14 @@ title:  네이버 개발자 업무와 기술 플랫폼
 ---
 
 ## 덧붙임
-개발/엔지니어링 역량은 어떤 직무를 하더라도 도움이 됨
+개발/엔지니어링 역량/마음가짐은 어떤 직무를 하더라도 도움이 됨.
 
 - 프로그래밍 언어 활용 능력
-- 버전 관리 개념, 협업시스템 사용
-    - 예: 오늘 발표 자료는 https://github.com/benelog/yonsei-stats/
+- 버전 관리 개념, 협업 시스템 사용
     - [Overleaf](https://www.overleaf.com/) 요즘 많이 쓴다고 들었음
-- 새로운 도구를 찾고 익히는 것을 즐기는 성향
+    - 예: 오늘 발표 자료는 https://github.com/benelog/yonsei-stats/
+- 지식 공유 성향
+- 새로운 도구를 찾고 익히기를 즐기는 성향
 
 ----
 
